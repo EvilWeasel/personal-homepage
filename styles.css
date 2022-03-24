@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  margin: 0px;
+  overflow: auto;
+  background-image: url('background.jpg');
+  background-size: cover;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0em;
+  border-radius: 4px;
+  width: 100%;
+  height: 100vh;
+}
+.row:nth-child(2n){
+  background-color: rgba(0,0,0,0.5);
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.col{
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  border-style: double;
+  border-color: #CC00CC;
+  font-family: 'Roboto Mono';
+  font-size: .85rem;
+  width: 25%;
+  min-height: 16em;
+  margin: 0em 0.5em;
+}
+
+ul.list{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  height: 80%;
+}
+
+.list>li>a{
+  font-family: 'Roboto';
+  text-decoration: none;
+  color: #8c8c8b;
+  display: block;
+  margin: .4em 0em;
+}
+
+.list>li>a:hover{
+  color: #CC00CC;
+}
+
+.bookmark-title{
+  font-family: 'Roboto';
+  font-size: 2rem;
+  color: #CC00CC;
+  margin: 0em 0em 1em 0em;
+}
+
+
+#clock {
+    font-family: sans-serif;
+    font-size: 4.0rem;
+    font-weight: 600;
+    font-family: "Anton";
+    color: #CC00CC;
+    text-shadow: 5px 5px 5px black;
+    margin-bottom: .25em;
+}
+
+#search {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-field {
+    width: 90%;
+    padding: .75em 1em;
+    box-sizing: border-box;
+    background-color: #000000;
+    border: solid 0px #000000;
+    font-family: "Roboto Mono";
+    font-size: 4rem;
+    color: #f2f2f2;
+    outline: none;
+    border-radius: 3px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+@media only screen and (max-width: 960px) {
+    #clock {
+        margin-top: 1em;
+    }
+    .container > .row {
+        flex-direction: column;
+        width: 80%;
+    }
+    .row > .col {
+        width: auto;
+        min-width: 50vw;
+        margin: 1em 0em;
+    }
+}
