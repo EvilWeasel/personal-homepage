@@ -17,17 +17,23 @@
   </div>
   <!-- Der Container für den gesammten Inhalt unserer Seite -->
   <div class="container">
-    <!-- Ein leeres Element, in dem die Uhrzeit angezeigt wird -->
+    <!-- Ein leeres Element, in dem die Uhrzeit angezeigt wird, Funktion und Inhalt kommt ausschließlich aus JavaScript -->
     <div id="clock"></div>
+    <!-- Die Basis für unser Layout, hier als Reihe benannt, im CSS als Flexbox definiert. Vererbt ein dynamisches Layout an die direkten Child-Elements -->
     <div class="row">
+      <!-- Die einzelnen Child-Elemente der Flexbox (row) hier als col benannt, zur besseren Übersicht welche Elemente das Layout angeben -->
+      <!-- Die Columns dienen hier als Container für unsere Linksammlungen -->
       <div class="col">
+        <!-- Überschrift für die Link-Container -->
         <h1 class="bookmark-title">IT-News</h1>
+        <!-- Eine Sammlung an Links für häufig besuchte Webseiten -->
         <ul class="list">
+          <!-- Individuelle Links als sogenannte List-Items -->
           <li><a href="https://www.ccc.de/en">Chaos Computer Club e.V.</a></li>
           <li><a href="https://www.heise.de">Heise Online</a></li>
           <li><a href="https://www.golem.de/specials/it-sicherheit/">Golem IT-Security</a></li>
           <li><a href="https://www.linuxjournal.com">Linux Journal</a></li>
-          <li><a href="https://www.news.itsfoss.com/">It's Foss</a></li>
+          <li><a href="https://opensource.com/tags/news">OpenSource.com News</a></li>
         </ul>
       </div>
       <div class="col">
