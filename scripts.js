@@ -13,6 +13,7 @@ searchField.addEventListener("keydown",  event => {
     // Lieblings-Suchmaschine und übergeben den Wert des Suchfeldes als Query-Parameter an sie.
     if (event.key === "Enter") {
         let val = searchField.value;
+        // Öffnet eine Suchmaschine im gleichen Fenster und übergibt den Wert des Suchfeldes als Query-Parameter
         window.open("https://duckduckgo.com/?q=" + val + "&source=web", "_self");
     }
 });
@@ -20,6 +21,8 @@ searchField.addEventListener("keydown",  event => {
 // Funktionsdefinition, um die aktuelle Uhrzeit zu bekommen und sie anschließend in ein...
 // menschenlesbares Format zu konvertieren.
 function getTime(){
+    // Erstellt ein neues Datum-Objekt
+    // Hint: Konstruktor-Aufruf -- Syntaktischer Zucker
     let date = new Date(),
         min = date.getMinutes(),
         sec = date.getSeconds(),
